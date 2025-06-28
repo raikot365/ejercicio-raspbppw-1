@@ -4,7 +4,7 @@ import ujson
 import machine
 import dht
 
-from settings import SSID, password, BROKER
+from settings import SSID, password, BROKER, PUERTO_MQTTS, MQTT_USR, MQTT_PASS
 import network
 import time
 
@@ -12,7 +12,9 @@ led_board = machine.Pin("LED", machine.Pin.OUT)
 
 pin_rele = machine.Pin(0, machine.Pin.OUT)
 
-
+config['user'] = MQTT_USR
+config['password'] = MQTT_PASS
+config['port'] = PUERTO_MQTTS
 config['ssid'] = SSID
 config['wifi_pw'] = password
 config['server'] = BROKER
