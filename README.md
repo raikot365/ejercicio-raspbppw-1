@@ -3,6 +3,7 @@
 ## Consideraciones:
 El funcionamiento del código fue probado recibiendo mensajes en el formato JSON con la siguiente estructura.
 ![alt text](image.png)
+
 Donde el mensaje recibido en este caso el valor 1 es un string.
 Los parámetros que se espera recibir para los distintos topicos son:
 - modo: 0 para manual y 1 para automático
